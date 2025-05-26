@@ -6,17 +6,6 @@ from gen_ai_hub.proxy.langchain.openai import ChatOpenAI
 import os
 import requests
 
-# Set your Generative AI Hub environment variables
-os.environ['AICORE_CLIENT_ID'] = "sb-42a29a03-b2f4-47de-9a41-e0936be9aaf5!b256749|aicore!b164"
-os.environ['AICORE_AUTH_URL'] = "https://gen-ai.authentication.us10.hana.ondemand.com"
-os.environ['AICORE_CLIENT_SECRET'] = "b5e6caee-15aa-493a-a6ac-1fef0ab6e9fe$Satg7UGYPLsz5YYeXefHpbwTfEqqCkQEbasMDPGHAgU="
-os.environ['AICORE_RESOURCE_GROUP'] = "default"
-os.environ['AICORE_BASE_URL'] = "https://api.ai.prod.us-east-1.aws.ml.hana.ondemand.com/v2"
-LLM_DEPLOYMENT_ID = "d38dd2015862a15d"
-
-# Your API Keys
-RAPIDAPI_KEY = "f4dd0af201msh89a066cefb08972p1b1127jsn9bb19efbd8c8"
-SERPAPI_KEY = "c512a35f7cd6847d05b2e103f7fd8a67db439ee479cab347adde228b2a5cbdd1"
 
 # Define the State Schema
 class ProductSearchState(TypedDict):
